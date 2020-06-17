@@ -1,0 +1,34 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    description: |-
+      An example CSV that contains a webhook
+  name: example-webhook.v1.0.0
+  namespace: olm
+spec:
+  webhookdefinitions:
+  - generateName: example.webhook.com
+    deploymentName: "example-webhook-deployment"
+    containerPort: 443
+    sideEffects: "None"
+    failurePolicy: "Ignore"
+    admissionReviewVersions:
+    - "v1alpha1"
+    - "v1alpha2"
+    rules:
+    - operations:
+      - "CREATE"
+      - "UPDATE"
+      apiGroups:
+      - ""
+      apiVersions:
+      - "v1alpha1"
+      - "v1alpha2"
+      resources:
+      - "memcacheds"
+      - "memcached"
+      - "Memcached"
+    objectSelector:
+      foo: bar
+    webhookPath: "/convert"
