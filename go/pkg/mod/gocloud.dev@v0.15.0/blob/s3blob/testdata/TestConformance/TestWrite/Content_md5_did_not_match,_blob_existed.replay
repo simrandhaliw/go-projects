@@ -1,0 +1,266 @@
+{
+  "Initial": "AQAAAA7Ua6qXEw+IVv8Q",
+  "Version": "0.2",
+  "Converter": {
+    "ClearHeaders": [
+      "^X-Goog-.*Encryption-Key$",
+      "^X-Amz-Date$",
+      "^User-Agent$"
+    ],
+    "RemoveRequestHeaders": [
+      "^Authorization$",
+      "^Proxy-Authorization$",
+      "^Connection$",
+      "^Content-Type$",
+      "^Date$",
+      "^Host$",
+      "^Transfer-Encoding$",
+      "^Via$",
+      "^X-Forwarded-.*$",
+      "^X-Cloud-Trace-Context$",
+      "^X-Goog-Api-Client$",
+      "^X-Google-.*$",
+      "^X-Gfe-.*$",
+      "^Authorization$",
+      "^Duration$",
+      "^X-Amz-Security-Token$"
+    ],
+    "RemoveResponseHeaders": [
+      "^X-Google-.*$",
+      "^X-Gfe-.*$"
+    ],
+    "ClearParams": [
+      "^X-Amz-Date$"
+    ],
+    "RemoveParams": [
+      "^X-Amz-Credential$",
+      "^X-Amz-Signature$",
+      "^X-Amz-Security-Token$"
+    ]
+  },
+  "Entries": [
+    {
+      "ID": "5bef841d85ffe636",
+      "Request": {
+        "Method": "PUT",
+        "URL": "https://go-cloud-testing.s3.us-west-1.amazonaws.com/blob-for-reading",
+        "Header": {
+          "Accept-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "16"
+          ],
+          "Content-Md5": [
+            "dH9B/ScP7BuCvgMMwc1IAQ=="
+          ],
+          "User-Agent": [
+            "CLEARED"
+          ],
+          "X-Amz-Content-Sha256": [
+            "131fc6fe7a8464937c72db19863b153ad1ac1b534889ca7dbfc69cfd08088335"
+          ],
+          "X-Amz-Date": [
+            "CLEARED"
+          ]
+        },
+        "MediaType": "text/plain",
+        "BodyParts": [
+          "ZXhpc3RpbmcgY29udGVudA=="
+        ]
+      },
+      "Response": {
+        "StatusCode": 200,
+        "Proto": "HTTP/1.1",
+        "ProtoMajor": 1,
+        "ProtoMinor": 1,
+        "Header": {
+          "Content-Length": [
+            "0"
+          ],
+          "Date": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Etag": [
+            "\"747f41fd270fec1b82be030cc1cd4801\""
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "X-Amz-Id-2": [
+            "vwSZpCcApVC0diJbXbFgOBVFMpEELXx9K/wEmZYN2arqnfQKTm8RdonZlP9S2FV356+pTwboIkA="
+          ],
+          "X-Amz-Request-Id": [
+            "2D5F539D89E56948"
+          ]
+        },
+        "Body": ""
+      }
+    },
+    {
+      "ID": "0d74aaab4260deb0",
+      "Request": {
+        "Method": "GET",
+        "URL": "https://go-cloud-testing.s3.us-west-1.amazonaws.com/blob-for-reading",
+        "Header": {
+          "Accept-Encoding": [
+            "gzip"
+          ],
+          "User-Agent": [
+            "CLEARED"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "X-Amz-Date": [
+            "CLEARED"
+          ]
+        },
+        "MediaType": "",
+        "BodyParts": [
+          ""
+        ]
+      },
+      "Response": {
+        "StatusCode": 200,
+        "Proto": "HTTP/1.1",
+        "ProtoMajor": 1,
+        "ProtoMinor": 1,
+        "Header": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "16"
+          ],
+          "Content-Type": [
+            "text/plain; charset=utf-8"
+          ],
+          "Date": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Etag": [
+            "\"747f41fd270fec1b82be030cc1cd4801\""
+          ],
+          "Last-Modified": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "X-Amz-Id-2": [
+            "5Ah8Y97Sqp9nAmJLv7aFnaW9beb+gDhLheyFWy3OMJuTCoiEavQOIZGD/mt7XMWWBE4eNE4ovS0="
+          ],
+          "X-Amz-Request-Id": [
+            "B90C61F7998C89F8"
+          ]
+        },
+        "Body": "ZXhpc3RpbmcgY29udGVudA=="
+      }
+    },
+    {
+      "ID": "a28ccab0de8d1ca2",
+      "Request": {
+        "Method": "HEAD",
+        "URL": "https://go-cloud-testing.s3.us-west-1.amazonaws.com/blob-for-reading",
+        "Header": {
+          "User-Agent": [
+            "CLEARED"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "X-Amz-Date": [
+            "CLEARED"
+          ]
+        },
+        "MediaType": "",
+        "BodyParts": [
+          ""
+        ]
+      },
+      "Response": {
+        "StatusCode": 200,
+        "Proto": "HTTP/1.1",
+        "ProtoMajor": 1,
+        "ProtoMinor": 1,
+        "Header": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "16"
+          ],
+          "Content-Type": [
+            "text/plain; charset=utf-8"
+          ],
+          "Date": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Etag": [
+            "\"747f41fd270fec1b82be030cc1cd4801\""
+          ],
+          "Last-Modified": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "X-Amz-Id-2": [
+            "X3oUYVDbEdAjhkVmyLBIC7jXBFTgKOm+DabMvWUoxYn2Q4qNylCampUbVvr2f3QANmV1M1bYo3s="
+          ],
+          "X-Amz-Request-Id": [
+            "80F5CABC2EDA18C0"
+          ]
+        },
+        "Body": ""
+      }
+    },
+    {
+      "ID": "2f3123e3284eb969",
+      "Request": {
+        "Method": "DELETE",
+        "URL": "https://go-cloud-testing.s3.us-west-1.amazonaws.com/blob-for-reading",
+        "Header": {
+          "Accept-Encoding": [
+            "gzip"
+          ],
+          "User-Agent": [
+            "CLEARED"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "X-Amz-Date": [
+            "CLEARED"
+          ]
+        },
+        "MediaType": "",
+        "BodyParts": [
+          ""
+        ]
+      },
+      "Response": {
+        "StatusCode": 204,
+        "Proto": "HTTP/1.1",
+        "ProtoMajor": 1,
+        "ProtoMinor": 1,
+        "Header": {
+          "Date": [
+            "Mon, 13 May 2019 18:12:40 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "X-Amz-Id-2": [
+            "APnbdMtFbRrSCapcfeY+g2TBhV7V1G50qRjIf77h6AV6Tx2paHdgDh2SZFdMn13e6Xw/QZw9c2Y="
+          ],
+          "X-Amz-Request-Id": [
+            "7B6C48BE3A3B3279"
+          ]
+        },
+        "Body": ""
+      }
+    }
+  ]
+}

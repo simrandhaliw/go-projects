@@ -1,0 +1,27 @@
+1
+//- - - - - - - - -//
+This should 'be' replaced
+//- - - - - - - - -//
+<p>This should &lsquo;be&rsquo; replaced</p>
+//= = = = = = = = = = = = = = = = = = = = = = = =//
+
+2
+//- - - - - - - - -//
+This should "be" replaced
+//- - - - - - - - -//
+<p>This should &ldquo;be&rdquo; replaced</p>
+//= = = = = = = = = = = = = = = = = = = = = = = =//
+
+3
+//- - - - - - - - -//
+**--** *---* a...<< b>>
+//- - - - - - - - -//
+<p><strong>&ndash;</strong> <em>&mdash;</em> a&hellip;&laquo; b&raquo;</p>
+//= = = = = = = = = = = = = = = = = = = = = = = =//
+
+4
+//- - - - - - - - -//
+Some say '90s, others say 90's, but I can't say which is best.
+//- - - - - - - - -//
+<p>Some say &rsquo;90s, others say 90&rsquo;s, but I can&rsquo;t say which is best.</p>
+//= = = = = = = = = = = = = = = = = = = = = = = =//
